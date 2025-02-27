@@ -1,6 +1,7 @@
 import { useNavigate } from "react-router-dom";
-import { useFilter } from "../FilterContext";
+
 import { CiHeart } from "react-icons/ci";
+import { useFilter } from "../FilterContext";
 
 export default function Search() {
   const { searchQuery, setSearchQuery } = useFilter();
