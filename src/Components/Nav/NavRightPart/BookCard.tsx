@@ -1,7 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import { HiOutlineUsers } from "react-icons/hi2";
 import { CiHeart } from "react-icons/ci";
-import useLikedStore from "../../src/Liked/Store";
+import useLikedStore from "../../../Liked/Store";
 import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Slider from "react-slick";
