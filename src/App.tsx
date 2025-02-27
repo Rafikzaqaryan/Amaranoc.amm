@@ -2,6 +2,7 @@ import { Routes, Route, BrowserRouter } from "react-router-dom";
 import HomePage from "./HomePage/HomePage";
 import Liked from "./Liked/Liked";
 import Login from "./Sign/Login";
+import Discounts from "./discounts/Discounts";
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/login" element={<Login />} />
         <Route path="/liked" element={<Liked />} />
+        <Route path="/discount" element={<Discounts />} />
       </Routes>
     </BrowserRouter>
   );

@@ -5,20 +5,18 @@ import { auth } from "../Firebase";
 import { createUserWithEmailAndPassword } from "firebase/auth";
 import SignUpWithGoogle from "./SignUpWithGoogle";
 import Input from "./Input";
-import Footer from "../components/footer/Footer";
-import Header from "../components/header/Header";
+import Footer from "../Components/footer/Footer";
+import Header from "../Components/Header/Header";
 
 export default function Register() {
   const nav = useNavigate();
 
-  // State with explicit types
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [fnlname, setFnLname] = useState<string>("");
   const [phone, setPhone] = useState<string>("");
   const [error, setError] = useState<string>("");
 
-  // Handle form submission
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
@@ -36,7 +34,7 @@ export default function Register() {
       console.log("Account created:", userCredential.user);
       nav("/login");
     } catch (error: any) {
-      setError(error.message); // Can improve this by mapping Firebase error codes to user-friendly messages
+      setError(error.message);
     }
   };
 

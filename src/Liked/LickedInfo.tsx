@@ -14,7 +14,7 @@ export default function LikedInfo() {
           <div
             key={el.id}
             className="shadow-md w-[460px] h-[400px] rounded-[10px] bg-white cursor-pointer"
-            onClick={() => navigate(`/offer/${el.id}`)} // Use el.id here
+            onClick={() => navigate(`/offer/${el.id}`)}
           >
             <img
               src={el.image}
