@@ -1,3 +1,4 @@
+import Footer from "../Components/footer/Footer";
 import Header from "../Components/Header/Header";
 import LickedInfo from "./LickedInfo";
 
@@ -6,7 +7,7 @@ export default function Liked() {
     <div>
       <Header />
       <LickedInfo />
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
