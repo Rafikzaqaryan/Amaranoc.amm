@@ -4,6 +4,7 @@ import Liked from "./Liked/Liked";
 import Login from "./Sign/Login";
 import Discounts from "./discounts/Discounts";
 import Services from "./Services/Services";
+import AboutAs from "./Components/AboutAs/AboutAs";
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
         <Route path="/liked" element={<Liked />} />
         <Route path="/discount" element={<Discounts />} />
         <Route path="/services" element={<Services />} />
+        <Route path="/about" element={<AboutAs />} />
       </Routes>
     </BrowserRouter>
   );
